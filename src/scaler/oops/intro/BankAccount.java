@@ -9,7 +9,7 @@ public class BankAccount {
          return balance;
      }
      double withdraw(double amount) {
-         if(balance >= amount) {
+         if(amount >0 && balance >= amount) {
              balance = balance - amount;
              return balance;
          }
